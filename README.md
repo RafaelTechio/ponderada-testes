@@ -89,3 +89,7 @@ Conforme o resultado esperado, o acesso ao endpoint ocorreu bem e satisfez os cr
 ![Print resultado](image.png)
 
 Confome o resultado da print acima, verifica-se que o endpoint não possui erros e funciona conforme o esperado.
+
+## Pós Condição
+
+O sistema manteve-se estável ao final dos testes e todas as testagens foram bem sucedidas.
