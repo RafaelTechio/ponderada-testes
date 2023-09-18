@@ -32,6 +32,16 @@ describe('testing courses request (HOME)', () => {
                 expect(typeof sector.name).toBe('string')
                 expect(typeof sector.amount).toBe('number')
             })
+            expect(Array.isArray(course.modules)).toBe(true)
+            course.modules.map(module => {
+                expect(typeof module.id).toBe('number');
+                expect(typeof module.name).toBe('string');
+                expect(typeof module.description == 'string' || module.description === null).toBe(true);
+                expect(typeof module.order).toBe('number');
+                expect(typeof module.createdAt).toBe('string');
+                expect(typeof module.updatedAt).toBe('string');
+            })
+
         });
     })
 });
